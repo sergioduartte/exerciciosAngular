@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="MeuModulo">
+<meta charset="utf-8">
+
+<head>
+	<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+	<link href="css/main.css" rel="stylesheet" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+	<title>SAD - Contatos</title>
+</head>
+<body ng-controller="controllerContato" class="thumbnail">
+	<ul>
+		<p><a href="index.html">Voltar para o Início</a></p>
+		<p>Exemplo de colaboradores para a Pagina de contato</p>
+		<div ng-repeat="agenda in registros" class="col-md-6">
+			<p>{{agenda.nome}} - <em>{{agenda.email}}</em></p>
+		</div>
+	</ul>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
